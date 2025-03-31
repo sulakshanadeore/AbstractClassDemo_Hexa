@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OOPsContinuedAbstractDemo
+{
+    public class TechLead:Developer
+    {
+        public override void CalculateSalary(int bs)
+        {
+            base.CalculateSalary(bs);
+            base.TotalSalary = base.TotalSalary + 1000;
+            //double SalFromBase=base.TotalSalary;
+
+            //base.TotalSalary=SalFromBase + 1000;
+
+        }
+        //new ---hides the inherited member, new is allowed when virtual exists or not.
+
+        int _hrs;
+        public new int WorkingHrs { get { return _hrs; } set { _hrs = value + 2; } }
+
+        //override--- need base class functionality but want to add some more logic, to use override the base class member must be virtual then only override can be used, but still u want to hide when the base class member is virtual then use new
+
+        int _exp;
+        public override int ExpInYrs { get { return _exp; } set { _exp = value + 1; } }
+
+
+        //virtual keyword used for a method in my base class.Can I use new in my inherited/child class? Yes
+        //virtual keyword  is not used for a method in my base class.Can I use new in my inherited/child class? Yes
+        //virtual keyword used for a method in my base class.Can I use override in my inherited/child class? Yes
+        //virtual keyword  is not used for a method in my base class.Can I use override in my inherited/child class? No
+
+
+
+
+
+
+
+
+    }
+}
