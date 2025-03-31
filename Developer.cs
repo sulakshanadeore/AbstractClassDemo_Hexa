@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +10,9 @@ namespace OOPsContinuedAbstractDemo
     {
         string _desig;
         public override string Designation { get { return _desig; } set { _desig = value; } }
+        public int WorkingHrs { get; set; }
+
+        public virtual  int  ExpInYrs{ get; set; }
 
         public double TotalSalary { get; set; } //Property
         public override void CalculateSalary(int bs)
