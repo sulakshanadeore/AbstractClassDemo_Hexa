@@ -1,0 +1,23 @@
+C#
+---
+Interface and Abstract Class
+
+Whenever we want separation of logic based on  specific classes we use Abstract Class.
+To write a abstract class we use "abstract" keyword.
+A abstract cannot be instantiated/object cannot be created.
+Its sole purpose is inheritance.
+It is similar to a usual class only difference is using the "abstract keyword " and able to write a abstract method in the class and it must be public.
+Each abstract class must have atleast  one abstract member.
+
+Can a property be abstract in abstract class? Yes
+Can u write a static constructor in abstract class? Yes, but it can only use static variable.
+
+Can u use static variable in a non-static method/property? Yes
+Static constructor is only called once in the lifetime of the class and its called before any other object of that class is created.
+----------------------------------------------------------------------
+Want to generate employeeid automatically.
+
+static variable when u declare only single copy of it is created in the memory and it remembers the previous value with it.
+
+
+
